@@ -6,22 +6,17 @@
 body {
   background: #F7971E;
   background: #ADA996;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: monospace;
 }
-
-.titulo {
+body .titulo {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
 }
-
-header {
+body header {
   top: 0;
   width: 100%;
   display: flex;
@@ -29,84 +24,67 @@ header {
   justify-content: space-between;
   align-items: stretch;
 }
-
-header h1 {
+body header h1 {
   font-size: 35px;
 }
-
-header nav {
+body header nav {
   padding: 25px 0;
 }
-
-header nav ul {
+body header nav ul {
   display: flex;
   background: #cb2d3e;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ef473a, #cb2d3e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   list-style-type: none;
   justify-content: space-around;
 }
-
-header nav ul li {
+body header nav ul li {
   margin-bottom: 10px;
 }
-
-header nav ul a {
+body header nav ul li a {
   color: black;
 }
-
-header .headerLeft {
+body header .headerLeft {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
-header .headerLeft img {
+body header .headerLeft img {
   width: 50px;
 }
-
-h2 {
+body h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
 }
-
-.imagen {
-  max-width: 100vh;
-}
-
-.portada {
+body .portada {
   max-width: 100%;
   overflow: hidden;
 }
-
-.nosotros {
+body .portada img {
+  max-width: 100%;
+  height: auto;
+}
+body .nosotros {
   display: grid;
   justify-content: space-around;
 }
-
-h3 {
+body h3 {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
-
-a {
+body a {
   text-decoration: none;
 }
-
-.container {
+body .container {
   width: 100%;
   display: flex;
   max-width: 1100px;
 }
-
-.card {
+body .card {
   width: 100%;
   margin: 20px;
   border-radius: 6px;
@@ -114,44 +92,34 @@ a {
   background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px, rgba(0, 0, 0, 0.2);
 }
-
-.card:hover {
+body .card:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 20px;
   transform: translateY(-3%);
 }
-
-.card img {
+body .card img {
   width: 100%;
   height: 210px;
 }
-
-.card .contenido {
+body .card .contenido {
   padding: 15px;
   text-align: center;
 }
-
-.Info {
+body .Info {
   width: 30%;
   height: 30%;
 }
-
-footer {
+body footer {
   background: #cb2d3e;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ef473a, #cb2d3e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-
-footer a {
+body footer a {
   color: black;
 }
-
-footer .footerColumn {
+body footer .footerColumn {
   width: 25%;
 }
 
@@ -166,7 +134,6 @@ footer .footerColumn {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: monospace;
   }
-
   .titulo {
     width: auto;
     display: flex;
@@ -174,7 +141,6 @@ footer .footerColumn {
     align-items: center;
     font-weight: 600;
   }
-
   header {
     top: 0;
     width: 100%;
@@ -183,15 +149,12 @@ footer .footerColumn {
     justify-content: space-between;
     align-items: stretch;
   }
-
   header h1 {
     font-size: 35px;
   }
-
   header nav {
     padding: 25px 0;
   }
-
   header nav ul {
     display: flex;
     background: #cb2d3e;
@@ -203,25 +166,20 @@ footer .footerColumn {
     flex-direction: column;
     align-items: center;
   }
-
   header nav ul li {
     margin-bottom: 10px;
   }
-
   header nav ul a {
     color: black;
   }
-
   header .headerLeft {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-
   header .headerLeft img {
     width: 50px;
   }
-
   h2 {
     display: flex;
     justify-content: center;
@@ -229,31 +187,25 @@ footer .footerColumn {
     text-align: center;
     font-weight: bold;
   }
-
   .imagen {
     max-width: 768px;
   }
-
   .portada {
     max-width: min-content;
     overflow: hidden;
   }
-
   .nosotros {
     display: grid;
     justify-content: space-around;
   }
-
   h3 {
     font-size: 20px;
     text-align: initial;
     font-weight: bold;
   }
-
   a {
     text-decoration: none;
   }
-
   .container {
     width: 100%;
     display: flex;
@@ -261,7 +213,6 @@ footer .footerColumn {
     flex-direction: column;
     align-items: center;
   }
-
   .card {
     width: 100%;
     margin: 20px;
@@ -270,27 +221,22 @@ footer .footerColumn {
     background: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px, rgba(0, 0, 0, 0.2);
   }
-
   .card:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 20px;
     transform: translateY(-3%);
   }
-
   .card img {
     width: 100%;
     height: 210px;
   }
-
   .card .contenido {
     padding: 15px;
     text-align: center;
   }
-
   .Info {
     width: 30%;
     height: 30%;
   }
-
   footer {
     background: #cb2d3e;
     /* fallback for old browsers */
@@ -298,23 +244,18 @@ footer .footerColumn {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ef473a, #cb2d3e);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
   }
-
   footer a {
     color: black;
   }
-
   footer .footerColumn {
     width: 25%;
   }
 }
-
 @media only screen and (max-width: 425px) {
-
   body {
     background: #F7971E;
     background: #ADA996;
@@ -325,14 +266,12 @@ footer .footerColumn {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: monospace;
   }
-
   .titulo {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
   }
-
   header {
     top: 0;
     width: 100%;
@@ -341,15 +280,12 @@ footer .footerColumn {
     justify-content: space-between;
     align-items: stretch;
   }
-
   header h1 {
     font-size: 35px;
   }
-
   header nav {
     padding: 25px 0;
   }
-
   header nav ul {
     display: flex;
     background: #cb2d3e;
@@ -361,29 +297,23 @@ footer .footerColumn {
     list-style-type: none;
     justify-content: space-around;
   }
-
   header nav ul li {
     margin-bottom: 10px;
   }
-
   header nav ul a {
     color: black;
   }
-
   header .headerLeft {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-
   header .headerLeft img {
     width: 50px;
   }
-
   .imagen {
     max-width: 425px;
   }
-
   h2 {
     display: flex;
     justify-content: center;
@@ -391,38 +321,31 @@ footer .footerColumn {
     text-align: center;
     font-weight: bold;
   }
-
   .portada {
     max-width: 100%;
     overflow: hidden;
   }
-
   .portada img {
     max-width: 100%;
     height: auto;
   }
-
   .nosotros {
     display: grid;
     justify-content: space-around;
   }
-
   h3 {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
   }
-
   a {
     text-decoration: none;
   }
-
   .container {
     width: 100%;
     display: flex;
     max-width: 1100px;
   }
-
   .card {
     width: 100%;
     margin: 20px;
@@ -431,27 +354,289 @@ footer .footerColumn {
     background: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px, rgba(0, 0, 0, 0.2);
   }
-
+}
+@media only screen and (max-width: 425px) and (max-width: 768px) {
+  .card body {
+    background: #F7971E;
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: monospace;
+  }
+  .card .titulo {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+  }
+  .card header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .card header h1 {
+    font-size: 35px;
+  }
+  .card header nav {
+    padding: 25px 0;
+  }
+  .card header nav ul {
+    display: flex;
+    background: #cb2d3e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex-direction: column;
+    align-items: center;
+  }
+  .card header nav ul li {
+    margin-bottom: 10px;
+  }
+  .card header nav ul a {
+    color: black;
+  }
+  .card header .headerLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .card header .headerLeft img {
+    width: 50px;
+  }
+  .card h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  .card .imagen {
+    max-width: 768px;
+  }
+  .card .portada {
+    max-width: min-content;
+    overflow: hidden;
+  }
+  .card .nosotros {
+    display: grid;
+    justify-content: space-around;
+  }
+  .card h3 {
+    font-size: 20px;
+    text-align: initial;
+    font-weight: bold;
+  }
+  .card a {
+    text-decoration: none;
+  }
+  .card .container {
+    width: 100%;
+    display: flex;
+    max-width: 670px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px, rgba(0, 0, 0, 0.2);
+  }
+  .card .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 20px;
+    transform: translateY(-3%);
+  }
+  .card .card img {
+    width: 100%;
+    height: 210px;
+  }
+  .card .card .contenido {
+    padding: 15px;
+    text-align: center;
+  }
+  .card .Info {
+    width: 30%;
+    height: 30%;
+  }
+  .card footer {
+    background: #cb2d3e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .card footer a {
+    color: black;
+  }
+  .card footer .footerColumn {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 425px) and (max-width: 425px) {
+  .card body {
+    background: #F7971E;
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: monospace;
+  }
+  .card .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+  .card header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .card header h1 {
+    font-size: 35px;
+  }
+  .card header nav {
+    padding: 25px 0;
+  }
+  .card header nav ul {
+    display: flex;
+    background: #cb2d3e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    list-style-type: none;
+    justify-content: space-around;
+  }
+  .card header nav ul li {
+    margin-bottom: 10px;
+  }
+  .card header nav ul a {
+    color: black;
+  }
+  .card header .headerLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .card header .headerLeft img {
+    width: 50px;
+  }
+  .card .imagen {
+    max-width: 425px;
+  }
+  .card h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  .card .portada {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .card .portada img {
+    max-width: 100%;
+    height: auto;
+  }
+  .card .nosotros {
+    display: grid;
+    justify-content: space-around;
+  }
+  .card h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .card a {
+    text-decoration: none;
+  }
+  .card .container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+  }
+  .card .card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px, rgba(0, 0, 0, 0.2);
+  }
+  .card .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 20px;
+    transform: translateY(-3%);
+  }
+  .card .card img {
+    width: 100%;
+    height: 210px;
+  }
+  .card .card .contenido {
+    padding: 15px;
+    text-align: center;
+  }
+  .card .Info {
+    width: 30%;
+    height: 30%;
+  }
+  .card footer {
+    background: #cb2d3e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .card footer a {
+    color: black;
+  }
+  .card footer .footerColumn {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 425px) {
   .card:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 20px;
     transform: translateY(-3%);
   }
-
   .card img {
     width: 100%;
     height: 210px;
   }
-
   .card .contenido {
     padding: 15px;
     text-align: center;
   }
-
   .Info {
     width: 30%;
     height: 30%;
   }
-
   footer {
     background: #cb2d3e;
     /* fallback for old browsers */
@@ -463,15 +648,12 @@ footer .footerColumn {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
   }
-
   footer a {
     color: black;
   }
-
   footer .footerColumn {
     width: 25%;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */
