@@ -76,14 +76,13 @@ h2 {
   font-weight: bold;
 }
 
+.imagen {
+  max-width: 100vh;
+}
+
 .portada {
   max-width: 100%;
   overflow: hidden;
-}
-
-.portada img {
-  max-width: 100%;
-  height: auto;
 }
 
 .nosotros {
@@ -231,14 +230,13 @@ footer .footerColumn {
     font-weight: bold;
   }
 
+  .imagen {
+    max-width: 768px;
+  }
+
   .portada {
     max-width: min-content;
     overflow: hidden;
-  }
-
-  .portada img {
-    max-width: 100vh;
-    height: auto;
   }
 
   .nosotros {
@@ -302,7 +300,7 @@ footer .footerColumn {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
   }
 
@@ -380,6 +378,10 @@ footer .footerColumn {
 
   header .headerLeft img {
     width: 50px;
+  }
+
+  .imagen {
+    max-width: 425px;
   }
 
   h2 {
