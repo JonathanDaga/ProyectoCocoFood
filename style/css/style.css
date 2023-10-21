@@ -108,6 +108,14 @@ body .Info {
   width: 30%;
   height: 30%;
 }
+
+.sucursales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 body footer {
   background: #cb2d3e;
   background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
@@ -122,6 +130,7 @@ body footer a {
 body footer .footerColumn {
   width: 25%;
 }
+
 
 @media only screen and (max-width: 768px) {
   body {
@@ -237,6 +246,12 @@ body footer .footerColumn {
     width: 30%;
     height: 30%;
   }
+
+  .sucursales {
+    display: flex;
+    flex-direction: column;
+  }
+  
   footer {
     background: #cb2d3e;
     /* fallback for old browsers */

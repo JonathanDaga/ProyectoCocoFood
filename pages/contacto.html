@@ -41,32 +41,17 @@
         <fieldset>
             <legend>Datos de Contacto</legend>
 
-            <div>
-                <label for="nombre">Ingrese su nombre</label>
-                <input id="nombre" type="text">
-            </div>
+<div class="row">
+    <div class="col-md-6">
+        <input class="form-control mb-3 form-control-lg" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+        <input class="form-control mb-3 form-control-lg" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+        <input class="form-control mb-3 form-control-lg" type="text" name="email" id="email" placeholder="Ingrese su email">
+    </div>
 
-            <br>
-
-            <div>
-                <label for="telefono">Ingrese su telofono</label>
-                <input id="telefono" type="text">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="email">Ingrese su email</label>
-                <input id="email" type="text">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="consulta">Ingrese su consulta</label>
-                <br><br>
-                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-            </div>
+    <div class="col-md-6">
+        <textarea class="form-control mb-3 form-control-lg" cols="30" rows="6" placeholder="Ingrese su consulta"></textarea>
+    </div>
+</div>
 
         </fieldset>
 
